@@ -1,0 +1,44 @@
+{
+    "name": "thebachtiarz-company/laravel-oauth-v2",
+    "description": "Auth module for Laravel Project v2",
+    "type": "library",
+    "version": "0.0.1",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.20",
+        "thebachtiarz-company/laravel-base-v2": "^0.0.2",
+        "laravel/sanctum": "^4.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TheBachtiarz\\OAuth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "thebachtiarz-company",
+            "email": "thebachtiarz.company@gmail.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "thebachtiarz",
+        "oauth"
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheBachtiarz\\OAuth\\Providers\\ServiceProvider",
+                "TheBachtiarz\\OAuth\\Providers\\RouteServiceProvider"
+            ]
+        }
+    },
+    "homepage": "https://github.com/thebachtiarz-company/laravel-oauth-v2",
+    "support": {
+        "issues": "https://github.com/thebachtiarz-company/laravel-oauth-v2/issues",
+        "source": "https://github.com/thebachtiarz-company/laravel-oauth-v2"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
