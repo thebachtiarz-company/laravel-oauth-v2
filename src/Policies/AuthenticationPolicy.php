@@ -42,7 +42,7 @@ class AuthenticationPolicy
         );
 
         if (!Auth::hasUser()) {
-            throw new AuthenticationException();
+            throw new AuthenticationException('User not found.');
         }
 
         return OauthModelHelper::instance()::find(Auth::user()->id);
