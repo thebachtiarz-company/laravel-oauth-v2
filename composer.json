@@ -2,11 +2,11 @@
     "name": "thebachtiarz-company/laravel-oauth-v2",
     "description": "Auth module for Laravel Project v2",
     "type": "library",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.20",
-        "thebachtiarz-company/laravel-base-v2": "^0.*",
+        "thebachtiarz-company/laravel-base-v2": "^0.0.3",
         "laravel/sanctum": "^4.0"
     },
     "license": "MIT",
