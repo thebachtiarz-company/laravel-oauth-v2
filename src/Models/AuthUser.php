@@ -47,8 +47,8 @@ class AuthUser extends Authenticatable implements AuthUserInterface
     #[\Override]
     public function save(array $options = [])
     {
-        if (!$this->getCode()) {
-            $this->setCode(UserCodeHelper::generate());
+        if (!$this->getId()) {
+            $this->{self::ATTRIBUTE_CODE} ??= UserCodeHelper::generate();
         }
 
         return parent::save(options: $options);
@@ -64,8 +64,8 @@ class AuthUser extends Authenticatable implements AuthUserInterface
     protected function casts(): array
     {
         return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
+            self::ATTRIBUTE_EMAIL_VERIFIED_AT => 'datetime',
+            self::ATTRIBUTE_PASSWORD => 'hashed',
         ];
     }
 
